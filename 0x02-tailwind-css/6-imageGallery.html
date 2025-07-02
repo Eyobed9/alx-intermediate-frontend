@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Grid and Flexbox Layout</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="p-4">
+		<header class="bg-blue-500 text-white p-4">
+			<h1 class="text-3xl">Image Gallery</h1>
+		</header>
+
+		<main
+			class="grid max-md:grid-cols-1 lg:grid-cols-3 gap-4 mt-4 h-[70vh]"
+		>
+			<section class="flex lg:col-span-2">
+				<div class="bg-red-200 w-1/2 p-4">Flexbox Item 1</div>
+				<div class="bg-red-400 w-1/2 p-4">Flexbox Item 2</div>
+			</section>
+			<aside class="bg-green-200 p-4">Sidebar</aside>
+			<section
+				aria-labelledby="ImageGallery"
+			>
+				<h2 id="ImageGallery">Image gallery</h2>
+				<div class="grid grid-cols-3 max-md:grid-cols-1 mt-4 gap-6 p-2 mx-auto">
+					<img
+						src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg"
+						alt="Pan pet"
+					/>
+					<img
+                        src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7"
+						alt="Golden retriever"
+					/>
+					<img
+                        src="https://static01.nyt.com/images/2024/05/05/multimedia/05DOG-AGGRESSION-qhgl/05DOG-AGGRESSION-qhgl-mediumSquareAt3X.jpg"
+						alt="German shepherd"
+					/>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-gray-800 text-white p-4 mt-4">
+			<p>&copy; 2024 John Doe's Blog</p>
+		</footer>
+	</body>
+</html>
