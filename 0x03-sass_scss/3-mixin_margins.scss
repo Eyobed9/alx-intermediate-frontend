@@ -1,0 +1,12 @@
+@mixin mX($size: 10px) {
+    margin-left: $size;
+    margin-right: $size;
+}
+
+body {
+    @include mX;
+}
+
+div {
+    @include mX(15px);
+}
